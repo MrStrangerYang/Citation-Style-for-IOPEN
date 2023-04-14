@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
   <info>
-    <title>IEEE-iopen</title>
+    <title>IEEE-iopen-final</title>
     <id>https://csl.mendeley.com/styles/554550331/ieee-2</id>
     <author>
       <name>Mengxing Yang</name>
@@ -48,7 +48,7 @@
   </macro>
   <macro name="issued">
     <choose>
-      <if type="article-journal report" match="any">
+      <if type="article-journal article report" match="any">
         <date variable="issued">
           <date-part name="year" form="long"/>
         </date>
@@ -267,6 +267,14 @@
             <text macro="status"/>
           </group>
         </if>
+        <else-if type="article"  match="any">
+            <text macro="title" suffix=", "/>
+            <text term="arXiv" font-style="italic" suffix=", "/>
+            <text variable="number" suffix=", "/>
+	    <group delimiter=", ">
+            <text macro="issued"/>
+          </group>
+        </else-if>
         <else-if type="paper-conference speech" match="any">
           <text macro="title" suffix=", "/>
           <text macro="event"/>
@@ -334,7 +342,7 @@
             <text macro="issued"/>
           </group>
         </else-if>
-        <else-if type="chapter paper-conference" match="any">
+        <else-if type="chapter" match="any">
           <group delimiter=", " suffix=", ">
             <text macro="title"/>
             <group delimiter=" ">
