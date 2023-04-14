@@ -47,13 +47,6 @@ A CSL file  for zotero users in IOPEN
 
 ![image](https://user-images.githubusercontent.com/95218127/143858378-ea9b0857-8cea-4039-97f9-83d11c0996c8.png)
 
-## ❗❗arXiv文章
-把`期刊`中的 `arXiv:****` 拷贝到`其它`；
-
-`页码` 保持空白，不要修改。
-
-![image](https://user-images.githubusercontent.com/95218127/143860042-832c78cb-8525-48af-964f-73871ae7c468.png)
-
 
 如果有问题建议，欢迎及时反馈。
 
